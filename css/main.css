@@ -1,0 +1,166 @@
+* {
+    /*
+    border: 1px solid black;
+     */
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Engravers' Gothic BT", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 108px;
+    font-size: 2.4rem;
+    display: flex;
+    /*
+ flex-wrap: wrap;
+justify-content: flex-end;
+align-content: end;
+ gap: 36 px;
+     */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+@media (max-width: 1000px) {
+    main {
+        border: 2pt solid black;
+        flex-direction: column;
+        background: red;
+    }
+    div.col-left {
+        display: none;
+
+    }
+
+    div.col {
+        min-height: 10px;
+        padding: 10px;
+        width:100%;
+    }
+
+    nav {
+        display: none;
+    }
+    header {
+        background: blue;
+    //height: 113px;
+        //position: fixed;
+        //top: 1px;
+        //left: 1px;
+    }
+
+    header h1 {
+        color: #000;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+}
+
+
+
+div.col-left {
+    width: 480px;
+    min-width: 480px;
+    max-width: 480px;
+}
+
+
+div.col-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    align-items: end;
+
+    /*
+    width: 1076 px;
+    justify-content: end;
+     */
+}
+
+div.col {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: justify;
+    width: 520px;
+    min-height: 740px;
+    justify-content: flex-end;
+    /*
+    margin: 10 px;
+    padding: 0 16 px 0 16 px;
+    */
+}
+
+nav {
+    position: fixed;
+    top: 150px;
+    left: 36px;
+}
+
+
+nav ul {
+    list-style: none none;
+    margin: 0;
+    padding: 0;
+    font-size: 24pt;
+}
+
+nav li a {
+    text-decoration: none;
+    list-style-type: none;
+    display: block;
+    color: #000;
+    font-weight: lighter;
+}
+
+li a:hover {
+    font-weight: bold;
+}
+
+header {
+    //height: 113px;
+    position: fixed;
+    top: 72px;
+    left: 36px;
+}
+
+header h1 {
+    color: #000;
+    text-align: left;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+h1.t1 {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: lighter;
+    width: 100%;
+}
+
+h2.t2 {
+    text-align: center;
+    font-size: 18pt;
+    font-weight: lighter;
+    width: 100%;
+}
+
+footer {
+    height: 100px;
+}
