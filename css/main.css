@@ -13,20 +13,15 @@ html {
 body {
     background-color: #fff;
     font-family: "Engravers' Gothic BT", sans-serif;
-    //margin: 0;
-    //padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 main {
     margin-top: 108px;
     font-size: 2.4rem;
     display: flex;
-    /*
- flex-wrap: wrap;
-justify-content: flex-end;
-align-content: end;
- gap: 36 px;
-     */
+    font-weight: lighter;
 }
 
 img {
@@ -34,51 +29,102 @@ img {
     max-width: 100%;
 }
 
+a {
+    //display: block;
+    color: black;
+    text-decoration: none;
+}
+
+div.col-left {
+    width: 480px;
+    min-width: 480px;
+    max-width: 480px;
+}
+
+
+div.col-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    align-items: end;
+}
+
+div.col {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: justify;
+    width: 520px;
+    min-height: 740px;
+    justify-content: flex-end;
+}
+
+header {
+//height: 113px;
+    position: fixed;
+    top: 72px;
+    left: 36px;
+}
+
+header h1 {
+    color: #000;
+    text-align: left;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+p {
+    width: 100%;
+}
+h1.t1 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: lighter;
+    width: 100%;
+}
+
+h2.t2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: lighter;
+    width: 100%;
+}
+
+footer {
+    height: 100px;
+}
+
 
 @media (max-width: 1000px) {
     main {
         flex-direction: column;
-        //background: yellow;
-        //width: 100vw;
     }
     div.col-left {
         display: none;
     }
 
     div.col-right {
-        //background: red;
-        //height: initial;
-        //min-height: inherit;
         padding: 10px;
-        //width:100%;
     }
     div.col {
-        //background: green;
         padding: 10px;
-        //height: initial;
-        //min-height: inherit;
-
         min-width:100%;
     }
 
-    /*
-    nav {
-        display: none;
-    }
-     */
-
     header {
-    //height: 113px;
-        //position: fixed;
-        //top: 1px;
-        //left: 1px;
+        //background: #fff;
+        position: fixed;
+        top: 10px;
+        left: 30px;
+        padding: 1px 5px 1px 5px;
     }
 
     header h1 {
-        background: #fff;
+        //background: red;
         color: #000;
         text-align: left;
-        font-size: 2rem;
+        font-size: 4.2rem;
         font-weight: lighter;
     }
     img {
@@ -90,15 +136,15 @@ img {
         height: 10px;
     }
 
+    /*
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-        /* border: 1px solid red; */
+        box-sizing: border-box; // TODO what is this?
     }
+     */
 
     body {
-        /* background is white by default but added for clarity */
         background: white;
         width: 100%;
     }
@@ -134,7 +180,7 @@ img {
         top: 0;
         left: 0;
         width: 100%;
-        height: 50vh;
+        height: 30vh;
         overflow: hidden;
         /* basic menu styling*/
         list-style: none;
@@ -158,13 +204,11 @@ img {
     li a {
         font-weight: lighter;
         display: block;
-        //font-family: 'Open Sans', sans-serif;
         color: black;
         font-size: 3.2rem;
         /* remove default underline and add our own with padding and border bottom */
         text-decoration: none;
-        //border-bottom: 1px solid black;
-        padding-bottom: 0.5rem;
+        //padding-bottom: 0.5rem;
     }
 
     li a:hover, li a:focus {
@@ -174,51 +218,17 @@ img {
     li span {
         font-weight: lighter;
         display: block;
-    //font-family: 'Open Sans', sans-serif;
         color: black;
-        font-size: 5.2rem;
+        font-size: 3.2rem;
         /* remove default underline and add our own with padding and border bottom */
         text-decoration: none;
-        //border-bottom: 1px solid black;
-        padding-bottom: 0.5rem;
+        //padding-bottom: 0.5rem;
     }
 }
 
 
 
-div.col-left {
-    width: 480px;
-    min-width: 480px;
-    max-width: 480px;
-}
 
-
-div.col-right {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 36px;
-    align-items: end;
-
-    /*
-    width: 1076 px;
-    justify-content: end;
-     */
-}
-
-div.col {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-
-    text-align: justify;
-    width: 520px;
-    min-height: 740px;
-    justify-content: flex-end;
-    /*
-    margin: 10 px;
-    padding: 0 16 px 0 16 px;
-    */
-}
 
 @media (min-width: 1000px) {
     a.hamburger {
@@ -248,39 +258,4 @@ div.col {
     li a:hover {
         font-weight: bold;
     }
-}
-
-header {
-    //height: 113px;
-    position: fixed;
-    top: 72px;
-    left: 36px;
-}
-
-header h1 {
-    color: #000;
-    text-align: left;
-    font-size: 4rem;
-    font-weight: lighter;
-}
-
-p {
-    width: 100%;
-}
-h1.t1 {
-    text-align: center;
-    font-size: 24pt;
-    font-weight: lighter;
-    width: 100%;
-}
-
-h2.t2 {
-    text-align: center;
-    font-size: 18pt;
-    font-weight: lighter;
-    width: 100%;
-}
-
-footer {
-    height: 100px;
 }
